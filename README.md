@@ -14,7 +14,7 @@ The `POST /users` endpoint allows you to create new users by passing a username 
 ```
 POST /users
 params: username, password
-response: 200
+response: { message: "User created" }
 ```
 
 The `POST /authenticate` endpoint will return a JSON Web Token (JWT) when given a correct username and password combination:
@@ -22,7 +22,7 @@ The `POST /authenticate` endpoint will return a JSON Web Token (JWT) when given 
 ```
 POST /authenticate
 params: username, password
-response: 200
+response: { token: "TOKEN" }  
 ```
 
 
